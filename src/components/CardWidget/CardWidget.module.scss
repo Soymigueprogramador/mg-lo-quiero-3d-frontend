@@ -1,3 +1,11 @@
-.carritoCompras {
-    width: 2rem;
+.card_widget_contarner {
+    margin-right: 10rem;
+  
+    .carritoCompras {
+      width: 2rem;
+  
+      strong {
+        color: #fff;
+      }
+    }
 }

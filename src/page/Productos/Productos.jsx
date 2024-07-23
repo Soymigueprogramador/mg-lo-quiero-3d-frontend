@@ -1,12 +1,12 @@
-import CardProducts from '../../components/CardProducts/CardProducts.'
+import ItemList from '../../components/ItemList/ItemList.jsx';
+import { productos } from '../../asyncMock.js';
 
-const Productos = () => {
+const ProductosPage = () => {
   return (
     <div>
-      <h1>Productos</h1>
-      <CardProducts />
+      <ItemList productos={productos} />
     </div>
-  )
-}
+  );
+};
 
-export default Productos
+export default ProductosPage;
