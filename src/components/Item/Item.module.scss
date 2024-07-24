@@ -1,14 +1,17 @@
 .card {
     background-color: blue;
+    
     .text_card {
-        color: #fff;
+      color: #fff;
     }
+  
     .btn_card {
-        background-color: #fff;
-        color: blue;
-    }
-    .btn_card:hover {
+      background-color: #fff;
+      color: blue;
+  
+      &:hover {
         background-color: blue;
         color: #fff;
+      }
     }
-}
+  }

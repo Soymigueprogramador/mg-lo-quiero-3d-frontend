@@ -1,18 +1,11 @@
 import styles from './Item.module.scss';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { useState, useEffect } from "react";
-import { getProductos } from '../../asyncMock.js';
+import { productos } from '../../asyncMock.js';
 
 function BasicExample() {
-  const [productos, setProductos] = useState([]);
-
-  useEffect(() => {
-    getProductos()
-      .then((res) => setProductos(res))
-      .catch((error) => console.log(error));
-  }, []);
-
+  
+  
   return (
     <ul>
       {productos.map((producto) => (
