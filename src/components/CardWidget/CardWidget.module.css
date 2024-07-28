@@ -1,0 +1,9 @@
+.card_widget_contarner {
+  margin-right: 10rem;
+}
+.card_widget_contarner .carritoCompras {
+  width: 2rem;
+}
+.card_widget_contarner .carritoCompras strong {
+  color: #fff;
+}

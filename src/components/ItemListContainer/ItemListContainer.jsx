@@ -1,29 +1,41 @@
 import styles from './ItemListContainer.module.scss';
 import { useState, useEffect } from "react";
-import { getProductos } from '../../asyncMock.js';
+import { getUnProducto } from '../../asyncMock.js';
+import { useParams } from 'react-router-dom';
 
 const ItemListContainer = (props) => {
   const [productos, setProductos] = useState([]);
+  const { idItem } = useParams();
 
   useEffect(() => {
-    getProductos()
-      .then((res) => {
-        // Usar un Map para eliminar duplicados basados en el ID del producto
-        const productosMap = new Map();
-        res.forEach(producto => {
-          if (!productosMap.has(producto.id)) {
-            productosMap.set(producto.id, producto);
-          }
-        });
-        setProductos(Array.from(productosMap.values()));
-      })
-      .catch((error) => console.log(error));
-  }, []);
+    {/* 
+    const fetchProductos = async () => {
+      try {
+        const res = await getProductos();
+        setProductos(res);
+      } catch (error) {
+        console.log(error);
+      } 
+    }; 
+    */}
+    getUnProducto(idItem)
+      .then(res => setProductos([res]))  
+      .catch(error => console.log(error));
+  }, [idItem]);
   
   return (
-    <h1 className={styles.greeting}>
-      {props.greeting}
-    </h1>
+    <div>
+      <h1 className={styles.greeting}>
+        {props.greeting}
+      </h1>
+      <ul>
+        {productos.map((producto, index) => (
+          <li key={index}>
+            {producto.nombre} - ${producto.precio} - Stock: {producto.stock}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 
