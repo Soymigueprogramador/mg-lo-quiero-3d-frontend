@@ -1,14 +1,11 @@
 import styles from './ItemListContainer.module.scss';
 import { useState, useEffect } from "react";
-import { getUnProducto } from '../../asyncMock.js';
-import { useParams } from 'react-router-dom';
+import { getProductos } from '../../asyncMock.js'; // Asegúrate de tener esta función en tu archivo
 
 const ItemListContainer = (props) => {
   const [productos, setProductos] = useState([]);
-  const { idItem } = useParams();
 
   useEffect(() => {
-    {/* 
     const fetchProductos = async () => {
       try {
         const res = await getProductos();
@@ -16,25 +13,15 @@ const ItemListContainer = (props) => {
       } catch (error) {
         console.log(error);
       } 
-    }; 
-    */}
-    getUnProducto(idItem)
-      .then(res => setProductos([res]))  
-      .catch(error => console.log(error));
-  }, [idItem]);
+    };
+    fetchProductos();
+  }, []);
   
   return (
-    <div>
+    <div className={styles.itemListContainer}>
       <h1 className={styles.greeting}>
         {props.greeting}
       </h1>
-      <ul>
-        {productos.map((producto, index) => (
-          <li key={index}>
-            {producto.nombre} - ${producto.precio} - Stock: {producto.stock}
-          </li>
-        ))}
-      </ul>
     </div>
   );
 };
