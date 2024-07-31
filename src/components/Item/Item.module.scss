@@ -1,17 +1,32 @@
-.card {
-    background-color: blue;
-    
-    .text_card {
+.card_container {
+  display: inline-block;
+  margin: 10px;
+  background-color: blue;
+
+  .card {
+    background-color: blue; 
+  }
+
+  .text_card {
+    color: #fff;
+  }
+
+  .btn_card {
+    background-color: #fff;
+    color: blue;
+
+    &:hover {
+      background-color: blue;
       color: #fff;
     }
-  
-    .btn_card {
-      background-color: #fff;
-      color: blue;
-  
-      &:hover {
-        background-color: blue;
-        color: #fff;
-      }
-    }
   }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+}

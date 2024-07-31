@@ -1,12 +1,11 @@
-import ItemList from '../../components/ItemList/ItemList.jsx';
-import { productos } from '../../asyncMock.js';
+import Item from '../../components/Item/Item'
 
-const ProductosPage = () => {
+const Productos = () => {
   return (
     <div>
-      <ItemList productos={productos} />
+        <Item />
     </div>
-  );
-};
+  )
+}
 
-export default ProductosPage;
+export default Productos
