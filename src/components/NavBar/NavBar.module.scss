@@ -1,22 +1,25 @@
 .custom_navbar {
-    position: fixed;
-    margin-top: 0;
-    background-color: blue;
+  position: fixed;     
+  top: 0;               
+  left: 0;              
+  width: 100%;          
+  margin-top: 0;
+  background-color: blue;
+  z-index: 1000;        
   
-    .name_ecommerce {
+  .name_ecommerce {
+    color: #fff;
+  
+    &:hover {
       color: #fff;
-  
-      &:hover {
-        color: #fff;
-      }
-    }
-  
-    .links {
-      list-style-type: none;
-      text-decoration: none;
-      margin: 0 10px;
-      color: #fff;
-      text-align: center;
     }
   }
   
+  .links {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0 10px;
+    color: #fff;
+    text-align: center;
+  }
+}

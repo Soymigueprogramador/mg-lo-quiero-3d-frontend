@@ -15,6 +15,7 @@ const Buscador = () => {
         const productos = await getProductoPorNombre(nombre);
         setResultados(productos);
         setBusquedaRealizada(true);
+        setNombre('');
     };
 
     return (
