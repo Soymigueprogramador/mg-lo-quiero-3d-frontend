@@ -1,0 +1,40 @@
+.search {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
+    min-height: 15vh;  
+
+    input {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        border-radius: 2rem;
+        width: 25rem;
+        outline: none;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    button {
+        font-size: 1.5rem;
+        padding: 0.5rem 1.5rem;
+        border-radius: 2rem;
+        outline: none;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+        margin-left: 1.5rem;
+        cursor: pointer;
+        color: #fff;
+        background-color: blue;
+        border: none;
+    }
+
+    .alert { 
+        color: red;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 7.5vh;
+    }
+}
+
+
