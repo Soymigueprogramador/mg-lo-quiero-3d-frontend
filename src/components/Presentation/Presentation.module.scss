@@ -1,0 +1,18 @@
+.card_text_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border: none;
+
+    .card_body {
+        background-color: blue;
+        border: none;
+        border-radius: 2rem;
+    }
+
+    .card_text {
+        color: #fff;
+    }
+}

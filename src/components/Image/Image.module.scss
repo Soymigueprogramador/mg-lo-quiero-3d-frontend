@@ -1,0 +1,34 @@
+.image_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  
+    .image {
+      width: 500px;
+      height: 500px;
+    }
+
+    @media (max-width: 1024px) {
+      .image {
+        width: 400px;
+        height: 400px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .image {
+        width: 300px;
+        height: 300px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .image {
+        width: 100%;
+        height: auto; 
+        max-width: 300px;
+      }
+    }
+  }  
