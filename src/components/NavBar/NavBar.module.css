@@ -1,0 +1,19 @@
+.custom_navbar {
+  background-color: blue;
+
+  .name_ecommerce {
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .links {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0 10px;
+    color: #fff;
+    text-align: center;
+  }
+}

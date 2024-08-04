@@ -13,7 +13,7 @@ export const getProductos = () => {
     return new Promise(( resolve ) => {
         setTimeout(() => {
             resolve(productos)
-        }, 2000)
+        }, 1000)
     })
 };
 // Funcion para que me devuelva solo un productos segun su ID
@@ -23,6 +23,16 @@ export const getUnProducto = (id) => {
             const producto = productos.find( productos => productos.id === id );
             resolve(producto)
         })
+    }, 1000)
+};
+
+// Funcion para buscar por categoria.
+export const getProductoPorCategoria = (idCategoria) => {
+    return new Promise( resolve => {
+        setTimeout(() => {
+            const productoCategoria = productos.filter( producto => producto.idCategoria === idCategoria )
+            resolve(productoCategoria)
+        }, 1000)
     })
 };
 
@@ -32,7 +42,26 @@ export const getProductoPorNombre = (nombre) => {
         setTimeout(() => {
             const productosNombre = productos.filter(producto => producto.nombre === nombre);
             resolve(productosNombre);
-        }, 100);
+        }, 1000);
     });
 };
 
+// Funcion para buscar producto por mayor precio.
+export const getProductoProMyorPrecio = (mayorPrecio) => {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            const productoPorMyorPrecio = productos.filter( producto => producto.mayorPrecio === mayorPrecio )
+            resolve(productoPorMyorPrecio)
+        }, 1000)
+    })
+};
+
+// Funcion para buscar un producto por menor precio.
+export const getProductoPorMenorPrecio = (menorPrecio) => {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            const productosFiltrados = productos.filter(producto => producto.precio <= menorPrecio);
+            resolve(productosFiltrados);
+        }, 1000);
+    });
+};

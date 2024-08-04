@@ -18,15 +18,18 @@ li {
 
 .card_body {
   background-color: blue;
-  color: white;
   width: 20rem;  
   height: 30rem; 
-  margin: 5rem;  
+  margin: 2rem;  
   border: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
+
+  .text_body {
+    color: #fff;
+  }
 
   img {
     width: 100%;
@@ -47,5 +50,18 @@ li {
     width: 75%;
     background-color: #fff;
     color: blue;
+    border:  none;
+    border-radius: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .btn_card:hover {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    background-color: blue;
+    color: #fff;
+    border:  none;
+    border-radius: 3rem;
   }
 }
