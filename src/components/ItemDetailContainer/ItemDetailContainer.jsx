@@ -10,7 +10,7 @@ const ItemDetailContainer = () => {
   useEffect(() => {
     getUnProducto( idItem ) 
       .then( res => setProductos( res ) )
-  }, [ idItem ])
+  }, [ idItem ]) 
   
     return (
     <div>
@@ -23,4 +23,4 @@ const ItemDetailContainer = () => {
   )
 }
 
-export default ItemDetailContainer
+export default ItemDetailContainer;

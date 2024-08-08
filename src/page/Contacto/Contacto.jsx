@@ -1,9 +1,9 @@
-import Form from '../../components/Form/Form'
+
 
 const Contacto = () => {
   return (
     <div>
-      <Form />
+      <h1> Contactame </h1>
     </div>
   )
 }

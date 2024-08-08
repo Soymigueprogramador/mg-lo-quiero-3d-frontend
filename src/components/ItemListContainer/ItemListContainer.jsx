@@ -10,20 +10,10 @@ const ItemListContainer = (props) => {
   const { idCategoria } = useParams(); 
 
   useEffect(() => {
-    
-    {/* const fetchProductos = async () => {
-      try {
-        const res = await getProductos();
-        setProductos(res);
-      } catch (error) {
-        console.log(error);
-      } 
-    };
-    fetchProductos(); */}
     const funcion = idCategoria ? getProductoPorCategoria : getProductos;
     funcion( idCategoria )
 
-  }, [ idCategoria ]);
+  }, [ idCategoria ]); 
   
   return (
     <div className={styles.itemListContainer}>

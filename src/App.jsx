@@ -9,7 +9,12 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer.
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer.jsx";
 import Cart from './components/Cart/Cart.jsx';
 import Inicio from './page/Inicio/Inicio.jsx';
+
+
 import Productos from './page/Productos/Productos.jsx';
+
+
+
 import Contacto from './page/Contacto/Contacto.jsx';
 import Footer from "./components/Footer/Footer.jsx";
 
@@ -21,7 +26,7 @@ const App = () => {
       <NavBar />
       <Routes>
         <Route path="/" element={<Inicio />} />
-        <Route path="/productos" element={<Productos />} />
+        <Route path="/productos" element={<Productos  />} />
         <Route path="/categoria/:idCategoria" element={<ItemListContainer />} />
         <Route path="/item/:idItem" element={<ItemDetailContainer />} />
         <Route path="/cart" element={<Cart />} />

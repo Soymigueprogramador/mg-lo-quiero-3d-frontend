@@ -1,11 +1,11 @@
 // Array con los productos.
 export const productos = [
-    { id: 1, nombre: 'plato', precio: 10, stock: 10, image: 'https://m.media-amazon.com/images/I/7167oDsZBsL.jpg' },
-    { id: 2, nombre: 'baso', precio: 20, stock: 10, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzE3usXGF67qO_Wd0ogFcgyihQjkrY30yKjQ&s' },
-    { id: 3, nombre: 'llavero', precio: 30, stock: 10, image: 'https://i.pinimg.com/550x/0a/1e/aa/0a1eaac4783ddedfe565c0b2f41526d0.jpg' },
-    { id: 4, nombre: 'juguete', precio: 40, stock: 10, image: 'https://www.3dnatives.com/es/wp-content/uploads/sites/4/Buggy.jpg' },
-    { id: 5, nombre: 'muñeco', precio: 50, stock: 10, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQntevi_yPFLGH0yxBtYlpDTebNd7IHFlmTfw&s' },
-    { id: 6, nombre: 'taza', precio: 50, stock: 10, image: 'https://http2.mlstatic.com/D_Q_NP_972810-MLA46931453489_072021-O.webp' },
+    { id: 1, nombre: 'plato', precio: 10, stock: 10, idCategoria: '2', image: 'https://m.media-amazon.com/images/I/7167oDsZBsL.jpg' },
+    { id: 2, nombre: 'baso', precio: 20, stock: 10, idCategoria: '2', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzE3usXGF67qO_Wd0ogFcgyihQjkrY30yKjQ&s' },
+    { id: 3, nombre: 'llavero', precio: 30, stock: 10, idCategoria: '1', image: 'https://dcdn.mitiendanube.com/stores/003/174/033/products/tiburones-articulados-9cm-fusion3d-211-80329fe9091ea2217216840956614259-1024-1024.jpg' },
+    { id: 4, nombre: 'juguete', precio: 40, stock: 10, idCategoria: '3', image: 'https://www.3dnatives.com/es/wp-content/uploads/sites/4/Buggy.jpg' },
+    { id: 5, nombre: 'muñeco', precio: 50, stock: 10, idCategoria: '3', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQntevi_yPFLGH0yxBtYlpDTebNd7IHFlmTfw&s' },
+    { id: 6, nombre: 'taza', precio: 50, stock: 10, idCategoria: '1', image: 'https://http2.mlstatic.com/D_Q_NP_972810-MLA46931453489_072021-O.webp' },
 ];
 
 // Funcion que retorna una promesa.
