@@ -14,7 +14,6 @@ function BasicExample({ image, nombre, id, precio, stock}) {
             <div className={styles.card_container}>
               <Card className={styles.card_body}>
                 <Card.Img
-                  
                   src={producto.image}
                   alt={producto.nombre}
                 />

@@ -1,27 +1,30 @@
 import { useState } from "react";
 import styles from './ItemCount.module.scss'
 
-const ItemCount = () => {
+const ItemCount = ({ inicial, stock, funcionAgregar }) => {
   const [contador, setContador] = useState(1);
 
   const sumar = () => {
-    if (contador < 10) {
+    if (contador < stock) {
       setContador(contador + 1);
     }
   };
 
   const restar = () => {
-    if (contador > 1) {
+    if (contador > inicial) {
       setContador(contador - 1);
     }
   };
 
   return (
-    <div className={styles.contador}>
-      <button className={styles.btn_contador} onClick={sumar}> + </button>
-      <strong className={styles.contador_numero}> {contador} </strong>
-      <button className={styles.btn_contador} onClick={restar}> - </button>
-    </div>
+    <>
+      <div className={styles.contador}>
+        <button className={styles.btn_contador} onClick={sumar}> + </button>
+        <strong className={styles.contador_numero}> {contador} </strong>
+        <button className={styles.btn_contador} onClick={restar}> - </button>
+      </div>
+      <button onClick={() => funcionAgregar(contador)} > Agregar al carrito </button>
+    </>
   );
 };
 
