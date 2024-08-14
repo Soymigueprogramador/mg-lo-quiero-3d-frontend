@@ -1,7 +1,8 @@
 import { useContext } from "react"
-import { CarritoContext } from '../../Context/CarritoContext.jsx'
+import { CarritoContext } from '../../context/CarritoContext.jsx'
 import { Link } from "react-router-dom"
 import CartItem from '../CartItem/CartItem.jsx'
+//import Button from '../Button/Button.jsx'
 
 const Cart = () => {
   const { carrito, vaciarCarrito, total, cantidadTotal } = useContext(CarritoContext);
@@ -10,7 +11,7 @@ const Cart = () => {
     return (
       <>
         <h2> Carrito vacio </h2>
-        <Link to='/'> Ver productos </Link>
+        <Link to='/productos'> Ver productos </Link>
       </>
     )
   }

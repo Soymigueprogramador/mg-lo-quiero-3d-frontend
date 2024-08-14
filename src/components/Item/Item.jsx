@@ -24,7 +24,7 @@ function BasicExample({ image, nombre, id, precio, stock}) {
                   <p className={styles.text_body}>Stock: {producto.stock}</p>
                   <ItemCount />
                   <Button as={Link} to={`/item/${producto.id}`} className={styles.btn_card}>Ver detalles</Button> 
-                  <Button className={styles.btn_card}>Comprar ahora</Button>
+                  <Button className={styles.btn_card}> Aregar al carrito </Button>
                 </Card.Body>
               </Card>
             </div>
@@ -36,6 +36,3 @@ function BasicExample({ image, nombre, id, precio, stock}) {
 }
 
 export default BasicExample;
-
-{/* style={{ width: "18rem" }} */}
-{/* variant="top" */}

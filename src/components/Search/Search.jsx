@@ -47,9 +47,7 @@ const Buscador = () => {
                                     <p className={styles.text_card}>ID: {producto.id}</p>
                                     <p className={styles.text_card}>Precio: ${producto.precio}</p>
                                     <p className={styles.text_card}>Stock: {producto.stock}</p>
-                                    <Button as={Link} to={`/item/${producto.id}`} className={styles.btn_card}>
-                                        Ver detalles
-                                    </Button>
+                                    <Button as={Link} to={`/item/${producto.id}`} className={styles.btn_card}> Ver detalles </Button>
                                     <Button className={styles.btn_card}>Comprar ahora</Button>
                                 </Card.Body>
                             </Card>

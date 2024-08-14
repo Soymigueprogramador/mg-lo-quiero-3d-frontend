@@ -1,8 +1,8 @@
 import styles from './Button.module.scss'
 
-const Button = () => {
+const Button = ({ nombre }) => {
   return (
-    <button className={styles.button}> Buscar </button>
+    <button className={styles.button}> { nombre } </button>
   )
 }
 
