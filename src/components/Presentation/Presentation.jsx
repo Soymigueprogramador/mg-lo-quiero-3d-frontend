@@ -20,5 +20,3 @@ function TextExample() {
 }
 
 export default TextExample;
-
-{/* style={{ width: '18rem' }} */}
